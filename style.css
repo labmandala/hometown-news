@@ -385,18 +385,27 @@ body {
 }
 
 .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .articles {
 }
 
 .article {
+  display: flex;
+  flex-direction: column;
 }
 
 .article__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .article__excerpt {
+  flex: 1;
 }
 
 .headliners {
@@ -474,6 +483,8 @@ body {
 
 @media (min-width: 640px) {
   .nav {
+    display: flex;
+    align-items: center;
   }
 
   .headliner-two {
