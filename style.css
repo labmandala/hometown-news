@@ -612,7 +612,6 @@ body {
   grid-row: span 2;
 }
 
-
 /* EVENT FORM */
 
 .event {
@@ -671,6 +670,7 @@ body {
 .event-form__input {
   padding: 8px;
   border: 1px solid #0b2650;
+  width: 100%;
 }
 
 .event-form__submit {
@@ -689,3 +689,32 @@ body {
 }
 
 /* EVENT LAYOUT */
+
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-form__info {
+  flex: 1 1 425px;
+}
+
+.event-form__tip {
+  flex: 3 1 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-form__field {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.event-form__input {
+  flex: 1 1 275px;
+}
+
+.event-form__submit {
+  align-self: flex-end;
+}
